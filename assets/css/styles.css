@@ -36,6 +36,7 @@ span{
 }
 
 section{
+  height: 70vh;
   display: flex;
   margin: 3rem 0;
   flex-wrap: wrap-reverse;
@@ -46,8 +47,12 @@ section{
 }
 
 .card{
-  width: 25%;
+  width: 33.5%;
   filter: drop-shadow(-55.2942px 97.3989px 80px rgba(12, 35, 64, 0.1)) drop-shadow(-27.9927px 49.3082px 34.875px rgba(12, 35, 64, 0.0675)) drop-shadow(-11.0588px 19.4798px 13px rgba(12, 35, 64, 0.05)) drop-shadow(-2.41912px 4.2612px 4.625px rgba(12, 35, 64, 0.0325));
+}
+
+.text{
+  width: 66.5%;
 }
 
 .number{
@@ -55,8 +60,8 @@ section{
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 0;
-  left: 0;
+  top: 55%;
+  left: -5px;
   width: 6rem;
   height: 6rem;
   font-size: 3rem;
@@ -69,18 +74,29 @@ section{
 
 #albert{
   transform: rotate(5deg);
+  transition: transform .25s ease-in-out;
+}
+
+#albert:hover{
+  transform: rotate(-2deg);
 }
 
 #waino{
   transform: rotate(-4deg);
+  transition: transform .25s ease-in-out;
+}
+
+#waino:hover{
+  transform: rotate(2deg);
 }
 
 #yadi{
   transform: rotate(2deg);
+  transition: transform .25s ease-in-out;
 }
 
-.text{
-  width: 75%;
+#yadi:hover{
+  transform: rotate(-3deg);
 }
 
 .stat-grid{
@@ -92,6 +108,7 @@ section{
 }
 
 .stat{
+  padding-bottom: 1rem;
   text-align: center;
 }
 
