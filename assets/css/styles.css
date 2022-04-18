@@ -15,13 +15,6 @@ body{
   text-transform: uppercase;
 }
 
-.container{
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 1rem;
-  overflow: hidden;
-}
-
 h1{
   font-size: 8rem;
   color: var(--red);
@@ -35,6 +28,12 @@ span{
   color: var(--light-navy);
 }
 
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 section{
   display: flex;
   margin: 6rem 0;
@@ -42,6 +41,7 @@ section{
 }
 
 .hero img{
+  max-width: 80%;
   filter: drop-shadow(-55.2942px 97.3989px 80px rgba(12, 35, 64, 0.1)) drop-shadow(-27.9927px 49.3082px 34.875px rgba(12, 35, 64, 0.0675)) drop-shadow(-11.0588px 19.4798px 13px rgba(12, 35, 64, 0.05)) drop-shadow(-2.41912px 4.2612px 4.625px rgba(12, 35, 64, 0.0325));
 }
 
@@ -63,8 +63,8 @@ section{
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 55%;
-  left: -5px;
+  bottom: -15px;
+  left: -15px;
   width: 6rem;
   height: 6rem;
   font-size: 3rem;
@@ -84,13 +84,17 @@ section{
   transform: rotate(-2deg);
 }
 
-#albert-sig {
+#albert-sig{
   background-image: url("../images/albert-sig.png");
 }
 
 #waino{
   transform: rotate(-4deg);
   transition: transform .25s ease-in-out;
+}
+
+.waino{
+  flex-wrap: wrap;
 }
 
 #waino:hover{
@@ -140,16 +144,37 @@ section{
     font-size: .75rem;
   }
 
- .card{
-   width: 100%;
-   text-align: center;
- }
+  section{
+    margin: 3rem 0;
+  }
 
- .player{
-   width: 100%;
+ .card{
+   width: 80%;
  }
 
  .column{
    margin-right: 3rem;
  }
+}
+
+@media only screen and (max-width: 425px) {
+  h1{
+    font-size: 3rem;
+  }
+
+  .card{
+    margin: 0 auto 1rem;
+    width: 60%;
+  }
+
+  .number{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: solid .45rem var(--red);
+  }
+
+  .column{
+    margin-right: 1.5rem;
+  }
 }
