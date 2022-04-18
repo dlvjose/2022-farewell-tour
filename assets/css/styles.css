@@ -36,23 +36,26 @@ span{
 }
 
 section{
-  height: 70vh;
   display: flex;
-  margin: 3rem 0;
+  margin: 6rem 0;
   flex-wrap: wrap-reverse;
 }
 
 .hero img{
-    filter: drop-shadow(-55.2942px 97.3989px 80px rgba(12, 35, 64, 0.1)) drop-shadow(-27.9927px 49.3082px 34.875px rgba(12, 35, 64, 0.0675)) drop-shadow(-11.0588px 19.4798px 13px rgba(12, 35, 64, 0.05)) drop-shadow(-2.41912px 4.2612px 4.625px rgba(12, 35, 64, 0.0325));
+  filter: drop-shadow(-55.2942px 97.3989px 80px rgba(12, 35, 64, 0.1)) drop-shadow(-27.9927px 49.3082px 34.875px rgba(12, 35, 64, 0.0675)) drop-shadow(-11.0588px 19.4798px 13px rgba(12, 35, 64, 0.05)) drop-shadow(-2.41912px 4.2612px 4.625px rgba(12, 35, 64, 0.0325));
 }
 
 .card{
   width: 33.5%;
   filter: drop-shadow(-55.2942px 97.3989px 80px rgba(12, 35, 64, 0.1)) drop-shadow(-27.9927px 49.3082px 34.875px rgba(12, 35, 64, 0.0675)) drop-shadow(-11.0588px 19.4798px 13px rgba(12, 35, 64, 0.05)) drop-shadow(-2.41912px 4.2612px 4.625px rgba(12, 35, 64, 0.0325));
+  z-index: 1;
 }
 
 .text{
   width: 66.5%;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  z-index: 2;
 }
 
 .number{
@@ -81,6 +84,10 @@ section{
   transform: rotate(-2deg);
 }
 
+#albert-sig {
+  background-image: url("../images/albert-sig.png");
+}
+
 #waino{
   transform: rotate(-4deg);
   transition: transform .25s ease-in-out;
@@ -90,6 +97,10 @@ section{
   transform: rotate(2deg);
 }
 
+#waino-sig {
+  background-image: url("../images/waino-sig.png");
+}
+
 #yadi{
   transform: rotate(2deg);
   transition: transform .25s ease-in-out;
@@ -97,6 +108,10 @@ section{
 
 #yadi:hover{
   transform: rotate(-3deg);
+}
+
+#yadi-sig{
+  background-image: url("../images/yadi-sig.png");
 }
 
 .stat-grid{
@@ -113,6 +128,18 @@ section{
 }
 
 @media only screen and (max-width: 768px) {
+  h1{
+    font-size: 6rem;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+
+  span{
+    font-size: .75rem;
+  }
+
  .card{
    width: 100%;
    text-align: center;
@@ -120,5 +147,9 @@ section{
 
  .player{
    width: 100%;
+ }
+
+ .column{
+   margin-right: 3rem;
  }
 }
