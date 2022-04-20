@@ -40,9 +40,9 @@ section{
   flex-wrap: wrap-reverse;
 }
 
-.hero img{
-  max-width: 80%;
-  filter: drop-shadow(-55.2942px 97.3989px 80px rgba(12, 35, 64, 0.1)) drop-shadow(-27.9927px 49.3082px 34.875px rgba(12, 35, 64, 0.0675)) drop-shadow(-11.0588px 19.4798px 13px rgba(12, 35, 64, 0.05)) drop-shadow(-2.41912px 4.2612px 4.625px rgba(12, 35, 64, 0.0325));
+main{
+  margin: 0 auto;
+  text-align: center;
 }
 
 .card{
