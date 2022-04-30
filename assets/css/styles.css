@@ -79,10 +79,13 @@ main{
 }
 
 figure{
-  -webkit-box-shadow: -11px 19px 14px 0px rgba(12, 35, 64, 0.05);
-  box-shadow: -11px 19px 14px 0px rgba(12, 35, 64, 0.05);
   transform: rotateX(10deg) rotateY(-18deg) rotateZ(3deg);
   transition: transform .35s ease-in-out;
+}
+
+figure img{
+  -webkit-box-shadow: -11px 19px 14px 0px rgba(12, 35, 64, 0.05);
+  box-shadow: -11px 19px 14px 0px rgba(12, 35, 64, 0.05);
 }
 
 figure:hover{
@@ -169,6 +172,7 @@ figure:hover{
 
  .card{
    width: 80%;
+  margin: 0 auto 2rem;
  }
 
  .column{
@@ -181,11 +185,6 @@ figure:hover{
     font-size: 3rem;
   }
 
-  .card{
-    margin: 0 auto 1rem;
-    width: 60%;
-  }
-
   .number{
     width: 4rem;
     height: 4rem;
@@ -194,6 +193,6 @@ figure:hover{
   }
 
   .column{
-    margin-right: 1.5rem;
+    margin-right: 2rem;
   }
 }
