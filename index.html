@@ -32,13 +32,13 @@
 </head>
     <body>
         <div class="container">
-            <main class="hero">
-                <img src="../assets/images/FarewellTourLogo-color.png" alt="Illustration with text that reads 2022 Farewell Tour on it.">
+            <main>
+                <img id="mainIMG" src="../assets/images/FarewellTourLogo.png" alt="Illustration with text that reads 2022 Farewell Tour on it.">
                 <div><span>STL Record: 11 - 8</span></div>
             </main>
             <section class="player albert">
                 <div id="albert-sig" class="text">
-                    <span>1B/DH</span>
+                    <span>1B/DH - Albert Pujols</span>
                     <h1>The Machine</h1>
                     <div class="stat-grid">
                         <div class="column">
@@ -98,7 +98,7 @@
                     </figure>
                 </div>
                 <div id="waino-sig" class="text">
-                    <span>P</span>
+                    <span>P - Adam Wainright</span>
                     <h1>Waino</h1>
                     <div class="stat-grid">
                         <div class="column">
@@ -146,7 +146,7 @@
             </section>
             <section class="player yadi">
                 <div id="yadi-sig" class="text">
-                    <span>C</span>
+                    <span>C - Yadier Molina</span>
                     <h1>Yadi</h1>
                     <div class="stat-grid">
                         <div class="column">
@@ -200,7 +200,22 @@
             </section>
             <section class="disclaimer">
                 <span>*Last updated 04/30/2022</span>
+                <button onclick="changeColor()"></button>
             </section>
         </div>
+
+<script>
+    function changeColor() {
+        var element = document.body;
+        element.classList.toggle('red-mode');
+
+        //Get our img element by using document.getElementById
+        var img = document.getElementById("mainIMG");
+
+        //Set the src property of our element to the new image URL
+        img.src = '../assets/images/FarewellTourLogo-OnRed.png';
+    }
+</script>
+
     </body>
 </html>

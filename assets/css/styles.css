@@ -15,6 +15,31 @@ body{
   text-transform: uppercase;
 }
 
+.red-mode{
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.red-mode h1{
+  color: var(--white);
+}
+
+.red-mode span{
+  color: var(--white);
+  opacity: .5;
+}
+
+button{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--red);
+}
+
+.red-mode button{
+  background-color: var(--white);
+}
+
 h1{
   font-size: 8rem;
   color: var(--red);
@@ -23,6 +48,7 @@ h1{
 p{
   font-size: 2.5rem;
 }
+
 
 span{
   color: var(--light-navy);
@@ -38,9 +64,11 @@ section{
   display: flex;
   margin: 6rem 0;
   flex-wrap: wrap-reverse;
+  justify-content: space-between;
 }
 
 main{
+  position: relative;
   margin: 0 auto;
   text-align: center;
 }
