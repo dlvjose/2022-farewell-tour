@@ -209,11 +209,14 @@
         var element = document.body;
         element.classList.toggle('red-mode');
 
-        //Get our img element by using document.getElementById
-        var img = document.getElementById("mainIMG");
+        var img = document.getElementById('mainIMG').src;
+        if (img.indexOf('FarewellTourLogo-OnRed.png') != -1) {
+            document.getElementById('mainIMG').src = '../assets/images/FarewellTourLogo.png';
+        }
+        else {
+            document.getElementById('mainIMG').src = '../assets/images/FarewellTourLogo-OnRed.png';
+        }
 
-        //Set the src property of our element to the new image URL
-        img.src = '../assets/images/FarewellTourLogo-OnRed.png';
     }
 </script>
 
