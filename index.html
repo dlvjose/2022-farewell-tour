@@ -36,7 +36,7 @@
                 <img id="mainIMG" src="../assets/images/FarewellTourLogo.png" alt="Illustration with text that reads 2022 Farewell Tour on it.">
                 <div><span>STL Record: 93 - 69</span></div>
             </main>
-            <section class="player albert">
+            <section class="player">
                 <div id="albert-sig" class="text">
                     <span>1B/DH - Albert Pujols</span>
                     <h1>The&nbsp;Machine</h1>
@@ -83,68 +83,21 @@
                         </div>
                     </div>
                 </div>
-                <div id="albert" class="card">
+                <div class="card">
                     <figure>
                         <div class="number">5</div>
                         <img src="assets/images/card-albert.png">
                     </figure>
                 </div>
             </section>
-            <section class="player waino">
+
+            <section class="player yadi">
                 <div class="card">
-                    <figure id="waino">
-                        <div class="number">50</div>
-                        <img src="assets/images/card-waino.png">
+                    <figure id="yadi">
+                        <div class="number">4</div>
+                        <img src="assets/images/card-yadi.png">
                     </figure>
                 </div>
-                <div id="waino-sig" class="text">
-                    <span>P - Adam Wainright</span>
-                    <h1>Waino</h1>
-                    <div class="stat-grid">
-                        <div class="column">
-                            <div class="stat">
-                                <p>195</p>
-                                <span>W</span>
-                            </div>
-                            <div class="stat">
-                                <p>390</p>
-                                <span>GS</span>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="stat">
-                                <p>117</p>
-                                <span>L</span>
-                            </div>
-                            <div class="stat">
-                                <p>2567.1</p>
-                                <span>IP</span>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="stat">
-                                <p>3.38</p>
-                                <span>ERA</span>
-                            </div>
-                            <div class="stat">
-                                <p>2147</p>
-                                <span>SO</span>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="stat">
-                                <p>457</p>
-                                <span>G</span>
-                            </div>
-                            <div class="stat">
-                                <p>1.216</p>
-                                <span>WHIP</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="player yadi">
                 <div id="yadi-sig" class="text">
                     <span>C - Yadier Molina</span>
                     <h1>Yadi</h1>
@@ -191,16 +144,65 @@
                         </div>
                     </div>
                 </div>
-                <div id="yadi" class="card">
+            </section>
+            
+            <section class="player">
+                <div id="waino-sig" class="text">
+                    <span>P - Adam Wainright</span>
+                    <h1>Waino</h1>
+                    <div class="stat-grid">
+                        <div class="column">
+                            <div class="stat">
+                                <p>195</p>
+                                <span>W</span>
+                            </div>
+                            <div class="stat">
+                                <p>391</p>
+                                <span>GS</span>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="stat">
+                                <p>117</p>
+                                <span>L</span>
+                            </div>
+                            <div class="stat">
+                                <p>2572.1</p>
+                                <span>IP</span>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="stat">
+                                <p>3.39</p>
+                                <span>ERA</span>
+                            </div>
+                            <div class="stat">
+                                <p>2152</p>
+                                <span>SO</span>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="stat">
+                                <p>458</p>
+                                <span>G</span>
+                            </div>
+                            <div class="stat">
+                                <p>1.216</p>
+                                <span>WHIP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
                     <figure>
-                        <div class="number">4</div>
-                        <img src="assets/images/card-yadi.png">
+                        <div class="number">50</div>
+                        <img src="assets/images/card-waino.png">
                     </figure>
                 </div>
             </section>
             <footer>
                 <button onclick="changeColor()"></button>
-                <span>*Last updated 10/21/2022</span>
+                <span>*Last updated 05/11/2023</span>
             </footer>
         </div>
 
@@ -216,7 +218,6 @@
         else {
             document.getElementById('mainIMG').src = '../assets/images/FarewellTourLogo-OnRed.png';
         }
-
     }
 </script>
 

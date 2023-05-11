@@ -57,7 +57,7 @@ span{
 .container{
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
 }
 
 section{
@@ -92,11 +92,11 @@ figure:hover{
   transform: rotateX(-3deg) rotateY(2deg) rotateZ(-2deg);
 }
 
-#waino{
+#yadi{
   transform: rotateX(-10deg) rotateY(18deg) rotateZ(-3deg);
 }
 
-#waino:hover {
+#yadi:hover {
   transform: rotateX(3deg) rotateY(-2deg) rotateZ(2deg);
 }
 
@@ -124,7 +124,7 @@ figure:hover{
   border: solid .5rem var(--red);
 }
 
-.waino{
+.yadi{
   flex-wrap: wrap;
 }
 
@@ -171,8 +171,8 @@ figure:hover{
   }
 
  .card{
-   width: 80%;
-  margin: 0 auto 2rem;
+    width: 80%;
+    margin: 0 auto 2rem;
  }
 
  .column{
@@ -193,6 +193,6 @@ figure:hover{
   }
 
   .column{
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
 }
